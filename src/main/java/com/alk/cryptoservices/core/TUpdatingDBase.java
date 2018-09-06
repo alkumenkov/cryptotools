@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.alk.binanceservices.core;
+package com.alk.cryptoservices.core;
 
-import com.alk.binancemanager.TExchangeClient;
-import com.alk.binancemanager.TExchangeClientFactory;
+import com.alk.cryptoconnectors.TExchangeClient;
+import com.alk.cryptoconnectors.TExchangeClientFactory;
 import com.alk.updatingservice.TDBaseUpdater;
 import com.senatrex.dbasecollector.queues.TAsyncLogQueue;
 import com.senatrex.firebirdsample.pdbaseworking.DBaseWorking;

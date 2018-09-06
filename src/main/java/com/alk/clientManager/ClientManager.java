@@ -5,8 +5,8 @@
  */
 package com.alk.clientManager;
 
-import com.alk.binanceservices.core.TUserInterface;
-import com.alk.binancemanager.TExchangeClient;
+import com.alk.cryptoservices.core.TUserInterface;
+import com.alk.cryptoconnectors.TExchangeClient;
 import com.senatrex.dbasecollector.queues.TAsyncLogQueue;
 import java.awt.Color;
 import java.awt.Component;

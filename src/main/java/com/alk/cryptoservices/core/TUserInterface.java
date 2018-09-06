@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.alk.binanceservices.core;
+package com.alk.cryptoservices.core;
 
 import java.util.ArrayList;
 

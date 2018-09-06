@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.alk.binancemanager;
+package com.alk.cryptoconnectors;
 
-import com.alk.binanceservices.core.TUserInterface;
+import com.alk.cryptoservices.core.TUserInterface;
 import java.util.List;
 import java.util.Map;
 

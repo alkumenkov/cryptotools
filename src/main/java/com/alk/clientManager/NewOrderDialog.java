@@ -5,7 +5,7 @@
  */
 package com.alk.clientManager;
 
-import com.alk.binancemanager.TExchangeClient;
+import com.alk.cryptoconnectors.TExchangeClient;
 import com.senatrex.dbasecollector.queues.TAsyncLogQueue;
 
 /**

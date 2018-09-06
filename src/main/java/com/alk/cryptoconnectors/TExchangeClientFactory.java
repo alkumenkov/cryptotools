@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.alk.binancemanager;
+package com.alk.cryptoconnectors;
 
 import org.json.JSONObject;
 

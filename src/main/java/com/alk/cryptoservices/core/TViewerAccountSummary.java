@@ -1,14 +1,13 @@
-package com.alk.binanceservices.core;
+package com.alk.cryptoservices.core;
 
 import com.alk.accounttools.TAssetMatrix;
-import com.alk.binancemanager.TBinanceClient;
-import static com.alk.binanceservices.core.TInstrumentDBaseFixer.IsInstrumentExists;
+import com.alk.cryptoconnectors.TBinanceClient;
+import static com.alk.cryptoservices.core.TInstrumentDBaseFixer.IsInstrumentExists;
 import com.senatrex.dbasecollector.queues.TAsyncLogQueue;
 import com.senatrex.firebirdsample.pdbaseworking.DBaseWorking;
 import java.io.File;
 import java.io.FileReader;
 import java.util.Map;
-import java.util.Set;
 import org.ini4j.Ini;
 
 /*
@@ -46,17 +45,17 @@ public class TViewerAccountSummary {
 
             fBaseWorking.ExecuteUpdateQuery("refresh MATERIALIZED VIEW public.exchange_exported_trades; refresh MATERIALIZED VIEW public.trades_with_properties;");
            
-            TAssetMatrix lIncomeMatr = getIncomeLimit( "2018-03-14", "bin_a" );
+            TAssetMatrix lIncomeMatr = getIncomeLimit( "2018-03-14", lClientCode );
             System.out.println(lIncomeMatr);
-            double lTotal = lIncomeMatr.getSummary( "USDT", "2018-03-14" );
+            double lTotal = lIncomeMatr.getSummary( "USDT", lClientCode );
             System.out.println( lTotal );
 
-            TAssetMatrix lCurrMatr = getCurrentLimit( "2018-03-15", "bin_a" );
+            TAssetMatrix lCurrMatr = getCurrentLimit( "2018-03-15", lClientCode );
             System.out.println(lCurrMatr);
             lTotal = lCurrMatr.getSummary( "USDT", "2018-03-15" );
             System.out.println( lTotal );
 
-            TAssetMatrix lPnlMatr = getPnl( "2018-03-14", "2018-03-16", "bin_a" );
+            TAssetMatrix lPnlMatr = getPnl( "2018-03-14", "2018-03-16", lClientCode );
             System.out.println( lPnlMatr );
             lTotal = lPnlMatr.getSummary( "USDT", "2018-03-15" );
             System.out.println( lTotal );

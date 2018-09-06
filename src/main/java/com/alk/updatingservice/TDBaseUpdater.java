@@ -5,8 +5,8 @@
  */
 package com.alk.updatingservice;
 
-import com.alk.binancemanager.TExchangeClient;
-import com.alk.binanceservices.core.TUserInterface;
+import com.alk.cryptoconnectors.TExchangeClient;
+import com.alk.cryptoservices.core.TUserInterface;
 import com.senatrex.dbasecollector.queues.TAsyncLogQueue;
 import com.senatrex.firebirdsample.pdbaseworking.DBaseWorking;
 import java.text.Format;
